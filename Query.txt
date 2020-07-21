@@ -1,0 +1,5 @@
+Searching specific column in ALL table on one DB :
+
+SELECT * FROM information_schema.columns
+WHERE table_schema = 'your_db' AND column_name='your_column_name'
+ORDER BY table_name,ordinal_position
